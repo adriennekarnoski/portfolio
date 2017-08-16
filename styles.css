@@ -12,6 +12,7 @@ h1, h2 {
   font-family: 'Shadows Into Light', cursive;
   font-size: 2em;
   text-transform: uppercase;
+  margin-top: 5px;
 }
 
 i {
@@ -24,14 +25,15 @@ nav ul {
   clear: both;
 }
 
-main {
-  width: 90%;
-}
-
 p, h3 {
   font-family: 'Karla', sans-serif;
 }
 
+.about {
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
 h3 {
   font-size: 1.2em;
   margin-bottom: 5px;
@@ -39,8 +41,15 @@ h3 {
 
 .section-container {
   display: block;
+  margin: auto;
+  padding: 25px;
 }
 
+.carousel {
+  height: 250px;
+  width: 100%;
+  background: gray;
+}
 .project-description {
   width: 45%;
   display: block;
@@ -48,9 +57,9 @@ h3 {
 }
 
 article {
-  border: red solid 1px;
+
   display: table;
-  margin: 10px auto;
+  margin: 10px;
   content: " ";
   clear: both;
 }
@@ -59,7 +68,7 @@ article {
   width: 45%;
   height: 100px;
   backgroud-color: blue;
-border: black solid 2px;
+  border: black solid 2px;
   display: block;
   float: right;
 }
@@ -67,6 +76,8 @@ border: black solid 2px;
 .section-container h2 {
   display: block;
   text-align: center;
+  background: black;
+  color: white;
 }
 
 footer {
