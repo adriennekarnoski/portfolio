@@ -1,0 +1,23 @@
+header {
+  display: block;
+  content: " ";
+  clear: both;
+width: 100%;
+}
+
+h1 {
+  display: inline-block;
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+nav li {
+  display: none;
+}
+
+footer {
+  display: block;
+}
