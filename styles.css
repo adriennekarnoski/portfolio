@@ -1,23 +1,75 @@
 header {
-  display: block;
-  content: " ";
-  clear: both;
+display: table;
+content: " ";
+clear: both;
 width: 100%;
+background: black;
+color: white;
 }
 
-h1 {
+h1, h2 {
   display: inline-block;
-  float: left;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-nav {
+i {
   float: right;
 }
 
-nav li {
+nav ul {
   display: none;
+  list-style: none;
+  clear: both;
+}
+
+main {
+  width: 90%;
+}
+
+p, h3 {
+  font-family: 'Karla', sans-serif;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.section-container {
+  display: block;
+}
+
+.project-description {
+  width: 45%;
+  display: block;
+  float: left;
+}
+
+article {
+  border: red solid 1px;
+  display: table;
+  margin: 10px auto;
+  content: " ";
+  clear: both;
+}
+
+.img-place {
+  width: 45%;
+  height: 100px;
+  backgroud-color: blue;
+border: black solid 2px;
+  display: block;
+  float: right;
+}
+
+.section-container h2 {
+  display: block;
+  text-align: center;
 }
 
 footer {
   display: block;
+  width: 100%;
 }
