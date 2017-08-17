@@ -14,39 +14,47 @@
       <nav>
         <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
         <ul>
-          <li>Projects</li>
-          <li>GitHub</li>
-          <li>About</li>
+          <li data-content="home">Home</li>
+          <li data-content="projects">Projects</li>
+          <li data-content="about">About</li>
+          <li data-content="github"><a href="https://github.com/adriennekarnoski">GitHub</a></li>
         </ul>
       </nav>
     </header>
     <main>
-<section class="section-container carousel">
+<section class="section-container carousel" id="img-carousel">
   <p>Image Carousel</p>
 </section>
-<section class="section-container">
+
+<section class="section-container" id="about-me">
   <h2>About me</h2>
   <p class="about">Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
 </section>
-<section class="section-container">
+<section class="section-container" id="skills">
+  <h2>Skills</h2>
+  <p class="about">Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
+</section>
+<section class="section-container" id="projects">
   <h2>Projects</h2>
   <article>
-    <h3>Project 1</h3>
+
     <section class="project-description">
+      <h3>Project 1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </section>
     <div class="img-place">image goes here</div>
   </article>
   <article>
-    <h3>Project 2</h3>
     <section class="project-description">
+      <h3>Project 2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
     </section>
     <div class="img-place">image goes here</div>
   </article>
   <article>
-    <h3>Project 3</h3>
     <section class="project-description">
+      <h3>Project 3</h3>
+
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
     </section>
     <div class="img-place">image goes here</div>
@@ -59,5 +67,7 @@
       <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
       <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
