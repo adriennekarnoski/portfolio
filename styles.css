@@ -57,7 +57,6 @@ h3 {
 }
 
 article {
-
   display: table;
   margin: 10px;
   content: " ";
@@ -79,8 +78,49 @@ article {
   background: black;
   color: white;
 }
-
+ #skills {
+   display: none;
+ }
 footer {
   display: block;
   width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .section-container article {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .project-description {
+    width: 100%;
+    text-align: center;
+  }
+nav ul {
+  display: block;
+  float: right;
+  font-family: 'Karla', sans-serif;
+}
+
+nav li {
+  display: inline-block;
+  margin: auto 10px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav i {
+  visibility: hidden;
+}
+  .img-place {
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  #skills {
+    display: block;
+  }
 }
