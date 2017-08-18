@@ -31,24 +31,22 @@ function handleNav() {
 
 function handleCarousel() {
 $('#carousel').on('click', 'i', function() {
-var $img = $('#img-container img');
-var i = 0;
-var $imgNext = $img.get(i);
-// $imgNext.show();
-
-// console.log($imgChild);
-// console.log($img.index());
-// console.log($imgNext);
-
+var $img = $('#img-container');
+var $imgShow = $img.children().first();
+$imgShow.addClass('carousel-img');
   var $clickId = $(this).attr('id');
-
+console.log($imgShow.siblings());
+var $imgNext = $imgShow.siblings();
 
 
 
 if ($clickId === 'left') {
-  i++;
-  $imgNext = $img.get(i);
-  console.log($imgNext);
+
+  $imgNext.addClass('carousel-img');
+  $imgNext.next().removeClass('carousel-img');
+} else if ($clickId === 'right') {
+  $imgNext.addClass('carousel-img');
+  $imgNext.previous().removeClass('carousel-img');
 }
 
 
