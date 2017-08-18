@@ -1,32 +1,7 @@
-header {
-display: table;
-content: " ";
-clear: both;
-width: 100%;
-background: black;
-color: white;
-}
-
-h1, h2 {
-  display: inline-block;
-  font-family: 'Shadows Into Light', cursive;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-top: 5px;
-}
-
-i {
-  float: right;
-}
-
-nav ul {
-  display: none;
-  list-style: none;
-  clear: both;
-}
-
-p, h3 {
-  font-family: 'Karla', sans-serif;
+.section-container {
+  display: block;
+  margin: auto;
+  padding: 25px;
 }
 
 .about {
@@ -34,33 +9,17 @@ p, h3 {
   margin: 10px auto;
   text-align: center;
 }
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-.section-container {
-  display: block;
-  margin: auto;
-  padding: 25px;
-}
 
 .carousel {
   height: 250px;
   width: 100%;
   background: gray;
 }
+
 .project-description {
   width: 45%;
   display: block;
   float: left;
-}
-
-article {
-  display: table;
-  margin: 10px;
-  content: " ";
-  clear: both;
 }
 
 .img-place {
@@ -81,12 +40,8 @@ article {
  #skills {
    display: none;
  }
-footer {
-  display: block;
-  width: 100%;
-}
 
-@media screen and (min-width: 1000px) {
+ @media screen and (min-width: 1000px) {
   .section-container article {
     width: 30%;
     display: inline-block;
@@ -96,10 +51,11 @@ footer {
     width: 100%;
     text-align: center;
   }
-nav ul {
+/*nav ul {
   display: block;
   float: right;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Vollkorn', serif;
+  border: red solid 3px;
 }
 
 nav li {
@@ -109,10 +65,8 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-}
-nav i {
-  visibility: hidden;
-}
+}*/
+
   .img-place {
     width: 100%;
   }

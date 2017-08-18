@@ -1,0 +1,20 @@
+header {
+display: table;
+content: " ";
+clear: both;
+width: 100%;
+background: black;
+color: white;
+}
+
+article {
+  display: table;
+  margin: 10px;
+  content: " ";
+  clear: both;
+}
+
+footer {
+  display: block;
+  width: 100%;
+}
