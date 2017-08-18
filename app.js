@@ -29,4 +29,31 @@ function handleNav() {
   });
 }
 
+function handleCarousel() {
+$('#carousel').on('click', 'i', function() {
+var $img = $('#img-container');
+var $imgShow = $img.children().first();
+$imgShow.addClass('carousel-img');
+  var $clickId = $(this).attr('id');
+console.log($imgShow.siblings());
+var $imgNext = $imgShow.siblings();
+
+
+
+if ($clickId === 'left') {
+
+  $imgNext.addClass('carousel-img');
+  $imgNext.next().removeClass('carousel-img');
+} else if ($clickId === 'right') {
+  $imgNext.addClass('carousel-img');
+  $imgNext.previous().removeClass('carousel-img');
+}
+
+
+
+});
+
+}
+
 handleNav();
+handleCarousel();

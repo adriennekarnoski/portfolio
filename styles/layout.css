@@ -6,13 +6,15 @@
 
 .about {
   width: 80%;
-  margin: 10px auto;
+  height: 100%;
+  margin: auto;
+  padding: 20px 5px;
   text-align: center;
+  background: #e6e6e6;
 }
 
 .carousel {
   height: 250px;
-  width: 100%;
   background: gray;
 }
 
@@ -31,17 +33,23 @@
   float: right;
 }
 
-.section-container h2 {
-  display: block;
-  text-align: center;
-  background: black;
-  color: white;
-}
+
  #skills {
    display: none;
+   background: #e6e6e6;
+ }
+
+ #triangle-up {
+   margin: auto;
+ 	width: 0;
+ 	height: 0;
+ 	border-left: 20px solid transparent;
+ 	border-right: 20px solid transparent;
+ 	border-bottom: 20px solid #e6e6e6;
  }
 
  @media screen and (min-width: 1000px) {
+
   .section-container article {
     width: 30%;
     display: inline-block;
@@ -77,4 +85,16 @@ nav a {
   #skills {
     display: block;
   }
+
+  #intro-img {
+    max-width: 100%;
+  }
+
+  /*.active {
+    display: block;
+  }*/
+.carousel-img {
+  display: none;
+}
+
 }
