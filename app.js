@@ -24,7 +24,7 @@ function handleNav() {
   $('#nav-list').on('click', 'i.fa-bars', function() {
     var $navList = $('ul');
     console.log($navList);
-    $navList.show();
+    $navList.slideToggle();
 
   });
 }
