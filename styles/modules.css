@@ -1,13 +1,14 @@
 nav {
   display: block;
   position: relative;
+  width: 100%;
 }
 
 nav ul {
   display: none;
   position: absolute;
   left: 0px;
-  top: 40px;
+  top: 80px;
   background: black;
   width: 100%;
   height: 100vh;
@@ -29,8 +30,21 @@ nav a {
 nav a:hover, nav li:hover {
   color: teal;
 }
-h1, h2 {
-  display: inline-block;
+
+h1 {
+  font-family: 'Unica One', cursive;
+  height: 80px;
+  line-height: 80px;
+  margin-left: 20px;
+display: inline-block;
+font-size: 2.3em;
+  float: left;
+
+}
+
+h2 {
+  display: block;
+  text-align: center;
   font-family: 'Unica One', cursive;
   font-size: 2em;
   text-transform: uppercase;
@@ -38,25 +52,18 @@ h1, h2 {
 
 }
 
-h1 {
-  height: 80px;
-  line-height: 80px;
-  margin-left: 10px;
-font-size: 2.3em;
-  float: left;
-}
-i {
-  float: right;
-
-  height: 50%;
-margin: 20px;
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 p, h3 {
   font-family: 'Vollkorn', serif;
 }
 
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
+i {
+  float: right;
+
+  height: 50%;
+margin: 20px;
 }
