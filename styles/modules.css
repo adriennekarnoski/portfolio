@@ -7,6 +7,7 @@ nav {
 nav ul {
   display: none;
   position: absolute;
+  z-index: 50;
   left: 0px;
   top: 80px;
   background: black;
@@ -20,6 +21,7 @@ text-align: center;
 font-size: 2em;
 margin: 50px;
 font-family: 'Unica One', cursive;
+opacity: 1;
 }
 
 nav a {
@@ -31,39 +33,8 @@ nav a:hover, nav li:hover {
   color: teal;
 }
 
-h1 {
-  font-family: 'Unica One', cursive;
-  height: 80px;
-  line-height: 80px;
-  margin-left: 20px;
-display: inline-block;
-font-size: 2.3em;
-  float: left;
-
-}
-
-h2 {
+.section-container {
   display: block;
-  text-align: center;
-  font-family: 'Unica One', cursive;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-top: 5px;
-
-}
-
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-p, h3 {
-  font-family: 'Vollkorn', serif;
-}
-
-i {
-  float: right;
-
-  height: 50%;
-margin: 20px;
+  margin: auto;
+  padding: 25px;
 }

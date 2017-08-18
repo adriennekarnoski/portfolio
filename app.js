@@ -30,29 +30,32 @@ function handleNav() {
 }
 
 function handleCarousel() {
-$('#carousel').on('click', 'i', function() {
-var $img = $('#img-container');
-var $imgShow = $img.children().first();
-$imgShow.addClass('carousel-img');
-  var $clickId = $(this).attr('id');
-console.log($imgShow.siblings());
-var $imgNext = $imgShow.siblings();
+  var index = 0;
+  var imgList = [$('#1'), $('#2'), $('#3')];
 
+  $('.carousel-img').hide();
+  imgList[index].show();
 
+  $('#carousel').on('click', 'i#right', function() {
+    index++;
+    $('.carousel-img').hide();
 
-if ($clickId === 'left') {
+    if (index === 3) {
+      console.log(index);
+      index = 0;
+    }
+imgList[index].fadeIn('fast');
+  });
 
-  $imgNext.addClass('carousel-img');
-  $imgNext.next().removeClass('carousel-img');
-} else if ($clickId === 'right') {
-  $imgNext.addClass('carousel-img');
-  $imgNext.previous().removeClass('carousel-img');
-}
-
-
-
-});
-
+  $('#carousel').on('click', 'i#left', function() {
+    console.log(index);
+    index--;
+    $('.carousel-img').hide();
+    if (index < 0) {
+      index = 2;
+    }
+    imgList[index].show();
+  });
 }
 
 handleNav();

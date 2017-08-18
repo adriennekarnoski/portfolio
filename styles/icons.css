@@ -1,0 +1,35 @@
+#nav-list i {
+  float: right;
+  height: 50%;
+  margin: 20px;
+}
+
+h1 {
+  font-family: 'Unica One', cursive;
+  height: 80px;
+  line-height: 80px;
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 2.3em;
+  float: left;
+text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 5px;
+
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+p, h3 {
+  font-family: 'Vollkorn', serif;
+}
