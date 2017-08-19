@@ -1,6 +1,6 @@
 'use strict';
 
-// function handleNav() {
+// function navOptions() {
 //   $('nav').on('click', 'li', function() {
 //     var $navValue = $(this).data('content');
 //     console.log($navValue);
@@ -18,7 +18,7 @@
 //   });
 // }
 //
-// handleNav();
+// navOptions();
 
 function handleNav() {
   $('#nav-list').on('click', 'i.fa-bars', function() {
@@ -26,8 +26,23 @@ function handleNav() {
     console.log($navList);
     $navList.slideToggle();
 
+    $('nav').on('click', 'li', function() {
+      var $navValue = $(this).data('content');
+      console.log($navValue);
+      if ($navValue === 'projects') {
+        $('.section-container').hide();
+        $('section#projects').show();
+      } else if ($navValue === 'about') {
+        $('.section-container').hide();
+        $('section#about-me').show();
+        $('section#skills').show();
+      } else {
+        $('.section-container').show();
+      }
+});
   });
 }
+
 
 function handleCarousel() {
   var index = 0;
