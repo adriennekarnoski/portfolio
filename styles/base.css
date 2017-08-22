@@ -5,6 +5,8 @@ clear: both;
 width: 100%;
 background: black;
 color: white;
+position: fixed;
+top: 0;
 }
 
 article {

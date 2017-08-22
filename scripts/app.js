@@ -1,25 +1,5 @@
 'use strict';
 
-// function navOptions() {
-//   $('nav').on('click', 'li', function() {
-//     var $navValue = $(this).data('content');
-//     console.log($navValue);
-//     if ($navValue === 'projects') {
-//       $('.section-container').hide();
-//       $('section#projects').show();
-//     } else if ($navValue === 'about') {
-//       $('.section-container').hide();
-//       $('section#about-me').show();
-//       $('section#skills').show();
-//     } else {
-//       $('.section-container').show();
-//     }
-//
-//   });
-// }
-//
-// navOptions();
-
 function handleNav() {
   $('#nav-list').on('click', 'i.fa-bars', function() {
     var $navList = $('ul');
@@ -30,19 +10,21 @@ function handleNav() {
       var $navValue = $(this).data('content');
       console.log($navValue);
       if ($navValue === 'projects') {
+        $navList.hide();
         $('.section-container').hide();
         $('section#projects').show();
       } else if ($navValue === 'about') {
+        $navList.hide();
         $('.section-container').hide();
         $('section#about-me').show();
         $('section#skills').show();
       } else {
+        $navList.hide();
         $('.section-container').show();
       }
 });
   });
 }
-
 
 function handleCarousel() {
   var index = 0;

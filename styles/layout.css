@@ -1,6 +1,7 @@
 /* main image */
 
 #intro-img {
+  visibility: hidden;
   max-width: 100%;
   display: relative;
 }
@@ -116,9 +117,10 @@ background-image: url('background.png');
   }
 
   #intro-img {
+    visibility: visible;
     max-width: 100%;
+    display: relative;
   }
-
 
 
 }
