@@ -1,8 +1,19 @@
-.section-container {
-  display: block;
-  margin: auto;
-  padding: 25px;
+/* main image */
+
+#intro-img {
+  max-width: 100%;
+  display: relative;
 }
+
+.name {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  padding: 2px 5px;
+  border: none;
+}
+
+/* about me */
 
 .about {
   width: 80%;
@@ -11,12 +22,51 @@
   padding: 20px 5px;
   text-align: center;
   background: #e6e6e6;
+  display: block;
 }
 
-.carousel {
-  height: 250px;
-  background: gray;
+#triangle-up {
+  margin: auto;
+ width: 0;
+ height: 0;
+ border-left: 20px solid transparent;
+ border-right: 20px solid transparent;
+ border-bottom: 20px solid #e6e6e6;
 }
+
+
+/* image carousel */
+#carousel {
+background-image: url('background.png');
+}
+
+#carousel-container {
+  margin: auto;
+  display: block;
+}
+
+#img-container {
+  display: inline-block;
+  width: 100%;
+}
+
+#left {
+  float: left;
+  margin-top: 15%;
+}
+
+#right {
+  float: right;
+  margin-top: 15%;
+}
+
+.carousel-img {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+/* projects */
 
 .project-description {
   width: 45%;
@@ -33,22 +83,7 @@
   float: right;
 }
 
-
- #skills {
-   display: none;
-   background: #e6e6e6;
- }
-
- #triangle-up {
-   margin: auto;
- 	width: 0;
- 	height: 0;
- 	border-left: 20px solid transparent;
- 	border-right: 20px solid transparent;
- 	border-bottom: 20px solid #e6e6e6;
- }
-
- @media screen and (min-width: 1000px) {
+ @media screen and (min-width: 640px) {
 
   .section-container article {
     width: 30%;
@@ -59,21 +94,15 @@
     width: 100%;
     text-align: center;
   }
-/*nav ul {
-  display: block;
-  float: right;
-  font-family: 'Vollkorn', serif;
-  border: red solid 3px;
-}
 
-nav li {
-  display: inline-block;
-  margin: auto 10px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-}*/
+  .name {
+    position: absolute;
+    top: 200px;
+    left: 275px;
+    font-size: 5em;
+    padding: 2px 5px;
+    border: black solid 3px;
+  }
 
   .img-place {
     width: 100%;
@@ -90,11 +119,6 @@ nav a {
     max-width: 100%;
   }
 
-  /*.active {
-    display: block;
-  }*/
-.carousel-img {
-  display: none;
-}
+
 
 }

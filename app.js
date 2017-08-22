@@ -1,6 +1,6 @@
 'use strict';
 
-// function handleNav() {
+// function navOptions() {
 //   $('nav').on('click', 'li', function() {
 //     var $navValue = $(this).data('content');
 //     console.log($navValue);
@@ -18,7 +18,7 @@
 //   });
 // }
 //
-// handleNav();
+// navOptions();
 
 function handleNav() {
   $('#nav-list').on('click', 'i.fa-bars', function() {
@@ -26,33 +26,51 @@ function handleNav() {
     console.log($navList);
     $navList.slideToggle();
 
+    $('nav').on('click', 'li', function() {
+      var $navValue = $(this).data('content');
+      console.log($navValue);
+      if ($navValue === 'projects') {
+        $('.section-container').hide();
+        $('section#projects').show();
+      } else if ($navValue === 'about') {
+        $('.section-container').hide();
+        $('section#about-me').show();
+        $('section#skills').show();
+      } else {
+        $('.section-container').show();
+      }
+});
   });
 }
 
+
 function handleCarousel() {
-$('#carousel').on('click', 'i', function() {
-var $img = $('#img-container');
-var $imgShow = $img.children().first();
-$imgShow.addClass('carousel-img');
-  var $clickId = $(this).attr('id');
-console.log($imgShow.siblings());
-var $imgNext = $imgShow.siblings();
+  var index = 0;
+  var imgList = [$('#1'), $('#2'), $('#3')];
 
+  $('.carousel-img').hide();
+  imgList[index].show();
 
+  $('#carousel').on('click', 'i#right', function() {
+    index++;
+    $('.carousel-img').hide();
 
-if ($clickId === 'left') {
+    if (index === 3) {
+      console.log(index);
+      index = 0;
+    }
+imgList[index].fadeIn('fast');
+  });
 
-  $imgNext.addClass('carousel-img');
-  $imgNext.next().removeClass('carousel-img');
-} else if ($clickId === 'right') {
-  $imgNext.addClass('carousel-img');
-  $imgNext.previous().removeClass('carousel-img');
-}
-
-
-
-});
-
+  $('#carousel').on('click', 'i#left', function() {
+    console.log(index);
+    index--;
+    $('.carousel-img').hide();
+    if (index < 0) {
+      index = 2;
+    }
+    imgList[index].show();
+  });
 }
 
 handleNav();
