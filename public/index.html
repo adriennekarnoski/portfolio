@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="vendor/styles/normalize.css" >
+    <link href="styles/reset.css" rel="stylesheet" >
+    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/icons.css" rel="stylesheet" >
+    <link href="styles/layout.css" rel="stylesheet" >
+    <link href="styles/modules.css" rel="stylesheet" >
+      <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+    <script src="https://use.fontawesome.com/766df9d7f0.js"></script>
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <section class="section-container" id="projects">
+        <article>
+          <h1>{{title}}</h1>
+          <img src="{{image}}">
+          <p class="project-description">
+            {{description}}
+          </p>
+        </article>
+      </section>
+    </script>
+  </head>
+  
+  <body>
+    <header>
+      <h1>AK</h1>
+      <div id="nav-list">
+      <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
+      <nav>
+        <ul>
+          <li data-content="home">Home</li>
+          <li data-content="projects"><a href="#projects">Projects</a></li>
+          <li data-content="about"><a href="#about-me">About</a></li>
+          <li data-content="github"><a href="https://github.com/adriennekarnoski">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    </header>
+    <main>
+
+<img id="intro-img" src="images/mountain.jpg">
+<h1 class=name>Adrienne Karnoski</h1>
+
+<section class="section-container" id="about-me">
+  <div id="triangle-up"></div>
+  <span class="about">
+    <h2>About me</h2>
+    <p class="about">
+    Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
+    <i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+    <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+    <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+  </span>
+</section>
+
+<section class="section-container" id="carousel">
+  <div id="carousel-container">
+    <div id="img-container">
+      <i class="fa fa-angle-right fa-3x" aria-hidden="true" id="right"></i>
+      <i class="fa fa-angle-left fa-3x" aria-hidden="true" id="left"></i>
+      <img src="images/foggy.jpg" class="carousel-img" id="1">
+      <img src="images/monviso.jpg" class="carousel-img" id="2">
+      <img src="images/valley.jpg" class="carousel-img" id="3">
+    </div>
+  </div>
+</section>
+
+<section class="section-container" id="skills">
+  <h2>Skills</h2>
+  <p class="about">Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
+
+</section>
+
+<section class="section-container" id="projects">
+  <h2>Projects</h2>
+  <article>
+    <section class="project-description">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    </section>
+    <div class="img-place">image goes here</div>
+  </article>
+  <article>
+    <section class="project-description">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    </section>
+    <div class="img-place">image goes here</div>
+  </article>
+  <article>
+    <section class="project-description">
+      <h3>Project 3</h3>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. .</p>
+    </section>
+    <div class="img-place">image goes here</div>
+  </article>
+</section>
+    </main>
+    <footer>
+      <i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+      <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/vendor/scripts/handlebars.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script>Project.fetchAll();</script>
+  </body>
+</html>

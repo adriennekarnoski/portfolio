@@ -1,0 +1,128 @@
+/* main image */
+
+#intro-img {
+  visibility: hidden;
+  max-width: 100%;
+  display: relative;
+}
+
+.name {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  padding: 2px 5px;
+  border: none;
+}
+
+/* about me */
+
+.about {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 20px 5px;
+  text-align: center;
+  background: #e6e6e6;
+  display: block;
+}
+
+#triangle-up {
+  margin: auto;
+ width: 0;
+ height: 0;
+ border-left: 20px solid transparent;
+ border-right: 20px solid transparent;
+ border-bottom: 20px solid #e6e6e6;
+}
+
+
+/* image carousel */
+#carousel {
+background-image: url('background.png');
+}
+
+#carousel-container {
+  margin: auto;
+  display: block;
+}
+
+#img-container {
+  display: inline-block;
+  width: 100%;
+}
+
+#left {
+  float: left;
+  margin-top: 15%;
+}
+
+#right {
+  float: right;
+  margin-top: 15%;
+}
+
+.carousel-img {
+  margin: auto;
+  display: block;
+  width: 80%;
+}
+
+/* projects */
+
+.project-description {
+  width: 45%;
+  display: block;
+  float: left;
+}
+
+.img-place {
+  width: 45%;
+  height: 100px;
+  backgroud-color: blue;
+  border: black solid 2px;
+  display: block;
+  float: right;
+}
+
+ @media screen and (min-width: 640px) {
+
+  .section-container article {
+    width: 30%;
+    display: inline-block;
+  }
+
+  .project-description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .name {
+    position: absolute;
+    top: 20%;
+    left: 22%;
+    width: 55%;
+    font-size: 5em;
+    padding: 2px 5px;
+    border: black solid 3px;
+  }
+
+  .img-place {
+    width: 100%;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  #skills {
+    display: block;
+  }
+
+  #intro-img {
+    visibility: visible;
+    max-width: 100%;
+    display: relative;
+  }
+
+
+}
