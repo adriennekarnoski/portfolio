@@ -1,7 +1,17 @@
 [
   {
     "title":"Project 1",
-    "image": "https://s-media-cache-ak0.pinimg.com/236x/bf/36/cc/bf36cc7afa5ac57ab6c290f59bba8174.jpg",
+    "image": "http://data.whicdn.com/images/156674278/large.jpg",
+    "description": "Words"
+  },
+  {
+    "title":"Project 2",
+    "image": "https://i.pinimg.com/736x/49/bc/a2/49bca27d69dbcac9e7ece252d676f76b--cat-paws-kitty-cats.jpg",
+    "description": "Words"
+  },
+  {
+    "title":"Project 3",
+    "image": "https://pbs.twimg.com/media/B-e3VITIMAA5nEE.jpg",
     "description": "Words"
   }
 ]

@@ -9,9 +9,9 @@
 .name {
   position: absolute;
   top: 25%;
-  left: 10%;
-  width: 80%;
-  padding: 2px 5px;
+  left: -4%;
+  text-align: center;
+  width: 100%;
   border: none;
 }
 
@@ -39,7 +39,7 @@
 
 /* image carousel */
 #carousel {
-background-image: url('background.png');
+background-image: url('/images/background.png');
 }
 
 #carousel-container {
@@ -71,30 +71,46 @@ background-image: url('background.png');
 /* projects */
 
 .project-description {
-  width: 45%;
+  width: 100%;
   display: block;
-  float: left;
 }
 
-.img-place {
-  width: 45%;
-  height: 100px;
-  backgroud-color: blue;
+.project-img{
+  max-width: 100%;
   border: black solid 2px;
   display: block;
-  float: right;
+}
+
+.project-article {
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
  @media screen and (min-width: 640px) {
 
-  .section-container article {
-    width: 30%;
-    display: inline-block;
-  }
+   .project-article {
+     width: 30%;
+     text-align: center;
+     display: inline-block;
+     margin-left: 2%;
+   }
+
+#projects {
+  width: 100%;
+background: blue;
+}
+
+   .project-img {
+     max-width: 100%;
+     border: black solid 2px;
+     display: block;
+   }
 
   .project-description {
     width: 100%;
     text-align: center;
+    visibility: hidden;
   }
 
   .name {
@@ -105,10 +121,6 @@ background-image: url('background.png');
     font-size: 5em;
     padding: 2px 5px;
     border: black solid 3px;
-  }
-
-  .img-place {
-    width: 100%;
   }
 
   h3 {

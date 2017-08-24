@@ -36,5 +36,5 @@ nav a:hover, nav li:hover {
 .section-container {
   display: block;
   margin: auto;
-  padding: 25px;
+  padding: 25px 0;
 }

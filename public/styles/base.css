@@ -9,12 +9,7 @@ position: fixed;
 top: 0;
 }
 
-article {
-  display: table;
-  margin: 10px;
-  content: " ";
-  clear: both;
-}
+
 
 footer {
   display: block;
