@@ -1,30 +1,34 @@
 'use strict';
 
+// navigation
+
 function handleNav() {
   $('#nav-list').on('click', 'i.fa-bars', function() {
-    var $navList = $('ul');
+    var $navList = $('.nav-ul');
     console.log($navList);
     $navList.slideToggle();
 
-    $('nav').on('click', 'li', function() {
+    $('nav').on('click', '.nav-li', function() {
       var $navValue = $(this).data('content');
-      console.log($navValue);
       if ($navValue === 'projects') {
         $navList.hide();
         $('.section-container').hide();
-        $('section#projects').show();
+        $('section#projects').fadeIn('slow');
       } else if ($navValue === 'about') {
         $navList.hide();
         $('.section-container').hide();
-        $('section#about-me').show();
-        $('section#skills').show();
+        $('section#about-me').fadeIn();
+        $('section#skills').fadeIn();
+        $('section#contact').fadeIn();
       } else {
         $navList.hide();
-        $('.section-container').show();
+        $('.section-container').fadeIn();
       }
 });
   });
 }
+
+//image carousel
 
 function handleCarousel() {
   var index = 0;
@@ -55,5 +59,27 @@ imgList[index].fadeIn('fast');
   });
 }
 
+// project images and description
+
+function handleProjectDescription() {
+  $('#projects').on('mouseenter', '.project-article', function() {
+    var $description = $($(this).children('p'));
+    var $img = $($(this).children('img'));
+    var $imgHeight = $($(this).siblings().children('img').height());
+    var $newHeight = $imgHeight[0] + 'px';
+
+    $img.hide();
+    $description.fadeIn().css('height', $newHeight);
+    console.log($description.css('height'));
+  })
+  $('#projects').on('mouseleave', '.project-article', function() {
+    var $description = $($(this).children('p'));
+    var $img = $($(this).children('img'));
+    $img.fadeIn();
+    $description.hide();
+  })
+}
+
 handleNav();
 handleCarousel();
+handleProjectDescription();

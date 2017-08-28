@@ -9,7 +9,9 @@ position: fixed;
 top: 0;
 }
 
-
+main {
+  margin-top: 80px;
+}
 
 footer {
   display: block;

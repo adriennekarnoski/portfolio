@@ -1,17 +1,23 @@
 [
   {
     "title":"Project 1",
-    "image": "http://data.whicdn.com/images/156674278/large.jpg",
-    "description": "Words"
+    "image": "/images/websitemock1.png",
+    "description": "Words",
+    "demoHref": "#",
+    "codeHref": "#"
   },
   {
     "title":"Project 2",
-    "image": "https://i.pinimg.com/736x/49/bc/a2/49bca27d69dbcac9e7ece252d676f76b--cat-paws-kitty-cats.jpg",
-    "description": "Words and stuff and descriptions"
+    "image": "/images/websitemock2.png",
+    "description": "Words and stuff and descriptions",
+    "demoHref": "#",
+    "codeHref": "#"
   },
   {
     "title":"Project 3",
-    "image": "https://pbs.twimg.com/media/B-e3VITIMAA5nEE.jpg",
-    "description": "Words"
+    "image": "/images/websitemock3.png",
+    "description": "Words",
+    "demoHref": "#",
+    "codeHref": "#"
   }
 ]

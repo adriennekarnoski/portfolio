@@ -11,6 +11,7 @@
     <link href="styles/layout.css" rel="stylesheet" >
     <link href="styles/modules.css" rel="stylesheet" >
       <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
     <script src="https://use.fontawesome.com/766df9d7f0.js"></script>
 
     <script id="project-template" type="text/x-handlebars-template">
@@ -19,6 +20,10 @@
           <img src="{{image}}" class="project-img">
           <p class="project-description">
             {{description}}
+            <span class="button-span">
+            <button class="button" href="{{demoHref}}">DEMO</button>
+            <button class="button" href="{{codeHref}}">CODE</button>
+          </span>
           </p>
         </article>
     </script>
@@ -26,36 +31,98 @@
 
   <body>
     <header>
+      <span id="logo">
       <h1>AK</h1>
+    </span>
       <div id="nav-list">
       <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
       <nav>
-        <ul>
-          <li data-content="home">Home</li>
-          <li data-content="projects"><a href="#projects">Projects</a></li>
-          <li data-content="about"><a href="#about-me">About</a></li>
-          <li data-content="github"><a href="https://github.com/adriennekarnoski">GitHub</a></li>
+        <ul class="nav-ul">
+          <li data-content="home" class="nav-li">Home</li>
+          <li data-content="projects" class="nav-li"><a href="#projects">Projects</a></li>
+          <li data-content="about" class="nav-li"><a href="#about-me">About</a></li>
+          <li data-content="github" class="nav-li"><a href="https://github.com/adriennekarnoski">GitHub</a></li>
         </ul>
       </nav>
     </div>
 
     </header>
     <main>
-
-<img id="intro-img" src="images/mountain.jpg">
+<section class="section-container" id="intro">
 <h1 class=name>Adrienne Karnoski</h1>
+<h2>Create read update deastroy</h2>
+</section>
 
 <section class="section-container" id="about-me">
   <div id="triangle-up"></div>
-  <span class="about">
+  <div class="about">
     <h2>About me</h2>
     <p class="about">
     Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
-    <i class="fa fa-github fa-3x" aria-hidden="true" ></i>
+    <a href="https://github.com/adriennekarnoski"><i class="fa fa-github fa-3x" aria-hidden="true" ></i></a>
     <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
     <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-    <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
-  </span>
+  </div>
+</section>
+
+<section class="section-container" id="contact">
+<img src="/images/macbook.jpg" class="contact-img">
+<article class="contact-article">
+  <h2>Contact</h2>
+  <ul>
+  <li><i class="fa fa-mobile fa-3x" aria-hidden="true" ></i><span class="list-text"> 123-456-7890</span></li>
+  <li><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><span class="list-text"> email@email.email</span></li>
+  <li> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span class="list-text"> Seattle, WA</span></li>
+  <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><span class="list-text"> Name Name</span></li>
+</ul>
+</article>
+</section>
+
+<section class="section-container clearfix" id="skills">
+  <h2>Skills</h2>
+<article class="skills-article">
+
+  <div class="skills-div">
+    <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
+    <p>HTML & CSS</p>
+  </div>
+
+<div class="skills-div">
+  <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+  <p>Javascript</p>
+</div>
+
+<div class="skills-div">
+  <i class="fa fa-code-fork fa-3x" aria-hidden="true"></i>
+<p>Git</p>
+</div>
+
+<div class="skills-div">
+  <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+  <p>jQuery</p>
+</div>
+
+<div class="skills-div">
+<i class="fa fa-terminal fa-3x" aria-hidden="true"></i>
+  <p>Terminal</p>
+</div>
+
+<div class="skills-div">
+<i class="fa fa-bug fa-3x" aria-hidden="true"></i>
+  <p>Debugging</p>
+</div>
+<article>
+<!-- <span class="skills-span">
+  <i class="fa fa-code fa-3x" aria-hidden="true"></i>
+  <i class="fa fa-cogs fa-3x" aria-hidden="true"></i>
+  <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+  <i class="fa fa-bug" aria-hidden="true"></i>
+  <i class="fa fa-desktop" aria-hidden="true"></i>
+  <i class="fa fa-sitemap" aria-hidden="true"></i>
+  <i class="fa fa-terminal" aria-hidden="true"></i>
+  <i class="fa fa-file-code-o" aria-hidden="true"></i>
+  <i class="fa fa-wrench fa-3x" aria-hidden="true"></i>
+</span> -->
 </section>
 
 <section class="section-container" id="carousel">
@@ -70,11 +137,7 @@
   </div>
 </section>
 
-<section class="section-container" id="skills">
-  <h2>Skills</h2>
-  <p class="about">Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
 
-</section>
 
 <section class="section-container" id="projects">
   <h2>Projects</h2>
@@ -92,8 +155,8 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/vendor/scripts/handlebars.js"></script>
-    <script src="scripts/app.js"></script>
     <script src="scripts/projects.js"></script>
+    <script src="scripts/app.js"></script>
     <script>Project.fetchAll();</script>
   </body>
 </html>
