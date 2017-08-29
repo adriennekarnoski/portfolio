@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio for 301",
+  "main": "server.js",
+  "scripts": {
+    "test": "NO TEST COMMAND"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriennekarnoski/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Adrienne Karnoski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adriennekarnoski/portfolio/issues"
+  },
+  "homepage": "https://github.com/adriennekarnoski/portfolio#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
