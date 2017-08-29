@@ -1,30 +1,8 @@
+
+/* icon font styles*/
+
 #nav-list i {
   float: right;
   height: 50%;
   margin: 20px;
-}
-
-h1 {
-  font-family: 'Unica One', cursive;
-  text-transform: uppercase;
-}
-
-h2 {
-  display: block;
-  text-align: center;
-  font-family: 'Unica One', cursive;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-}
-
-p, h3 {
-font-family: 'Abel', sans-serif;
-
 }

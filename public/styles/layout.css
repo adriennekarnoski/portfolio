@@ -1,13 +1,10 @@
 
-/* logo */
+/* divide the page into major sections */
 
-#logo {
-  height: 80px;
-  line-height: 80px;
-  margin-left: 20px;
-  display: inline-block;
-  font-size: 2.3em;
-  float: left;
+.section-container {
+  display: block;
+  margin: auto;
+  padding: 25px 0;
 }
 
 /* introduction */

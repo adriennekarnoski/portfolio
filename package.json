@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/adriennekarnoski/portfolio#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "express": "^4.15.4",
+    "pg": "^7.2.0"
   }
 }
