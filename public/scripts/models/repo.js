@@ -5,16 +5,9 @@ var app = app || {};
   const repos = {};
 
   repos.all = [];
- repos.commits = [];
-  repos.requestRepos = function(callback) {
 
-    $.ajax({
-      url: 'https://api.github.com/user/repos',
-      method: 'GET',
-      headers: {
-        Authorization: `token ${githubToken}`
-      }
-        })
+  repos.requestRepos = function(callback) {
+  $.get('/github/user/repos')
           .then(
             data => data.forEach(function(ele) {repos.all.push(ele)}),
 
@@ -23,7 +16,6 @@ var app = app || {};
 };
 
 
-repos.filteredList = repos.commits.filter(function(user) { return user.author.login === 'adriennekarnoski'});
 repos.with = attr => repos.all.filter(repo => repo[attr]);
 
   module.repos = repos;
