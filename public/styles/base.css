@@ -92,4 +92,6 @@ font-family: 'Abel', sans-serif;
 footer {
   display: block;
   width: 100%;
+  background: black;
+  color: white;
 }
