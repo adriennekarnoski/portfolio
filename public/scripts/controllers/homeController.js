@@ -7,7 +7,8 @@ var app = app || {};
   homeController.init = function() {
     var $navList = $('.nav-ul');
     $navList.hide();
-  $('.section-container').fadeIn();
+  $('.section-container').hide();
+  $('#intro').show();
   };
 
   module.homeController = homeController;
