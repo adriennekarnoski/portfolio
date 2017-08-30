@@ -7,33 +7,12 @@
   padding: 25px 0;
 }
 
-/* introduction */
-
-#intro {
-margin-top: 80px;
-}
-
-.name {
-  font-size: 2.3em;
-  text-align: center;
-  width: 100%;
-}
-
 /* about me */
-
-.about {
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  padding: 20px 5px;
-  text-align: center;
-  background: #e6e6e6;
-  display: block;
-}
 
 .about a:hover {
   color: teal;
 }
+
 .about a {
   color: black;
 }
@@ -52,59 +31,6 @@ margin-top: 80px;
 #contact {
   background: #333333;
 }
-
-.contact-img {
-  display: none;
-}
-
-.contact-article {
-  width: 100%;
-  color: white;
-}
-
-#contact ul {
-  display: block;
-  width: 60%;
-  margin: auto;
-}
-
-#contact li {
-border-bottom: solid white 1px;
-margin: 5% 0%;
-padding: 2%;
-}
-
-#contact i {
-  width: 10%;
-}
-.list-text {
-
-  margin-left: 5%;
-  height: 30px;
-  font-size: 1.2em;
-}
-/* skills */
-
-.skills-div {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  float: left;
-  margin: 15px 0px;
-}
-
-.skills-span i {
-  height: 60px;
-}
-
-.skills-article {
-  content: " ";
-  display: table;
-  clear: both;
-  width: 80%;
-  margin: auto;
-}
-
 
 /* image carousel */
 
@@ -142,43 +68,6 @@ background-image: url('/images/background.png');
 
 /* projects */
 
-.project-description {
-  width: 100%;
-  display: block;
-}
-
-.project-img{
-  max-width: 100%;
-  display: block;
-}
-
-.project-article {
-  width: 100%;
-  text-align: center;
-  margin: auto;
-}
-
-.button-span {
-  display: block;
-}
-
-.button {
-  display: inline-block;
-  font-size: 1.2em;
-  border: solid teal 2px;
-   color: teal;
-   background: #333333;
-   text-align: center;
-   text-decoration: none;
-   border-radius: 3px;
-margin: 5px;
-}
-
-.repo-container {
-  width: 500px;
-height: 344px;
-
-}
 #repo-spot {
   width: 50%;
   height: 300px;
@@ -187,76 +76,4 @@ height: 344px;
   text-align: center;
   margin: auto;
   overflow: scroll;
-}
-
- @media screen and (min-width: 640px) {
-
-   #projects {
-     width: 100%;
-     content: " ";
-     display: table;
-     clear: both;
-   }
-
-   .project-article {
-     width: 30%;
-     text-align: center;
-     display: inline-block;
-     margin-left: 2%;
-     float: left;
-   }
-
-   .project-img {
-     max-width: 100%;
-     border: black solid 2px;
-     display: block;
-   }
-
-  .project-description {
-    width: 100%;
-    text-align: center;
-    display: none;
-    padding-top: 5px;
-    background: #333333;
-    color: white;
-  }
-
-  .name {
-    width: 100%;
-    font-size: 6em;
-    margin-top: 5%;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  #skills {
-    display: block;
-  }
-
-  #intro {
-    background-image: url('/images/mountain.jpg');
-    height: 32em;
-  }
-
-  .skills-div {
-    display: inline-block;
-    width: 16%;
-    text-align: center;
-  float: left;
-}
-
-.contact-article {
-  width: 50%;
-  float: right;
-  color: white;
-}
-
-  .contact-img {
-    width: 50%;
-    display: inline-block;
-  }
-
-
 }
