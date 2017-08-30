@@ -1,2 +1,62 @@
 
 /*  reusable modular components of a design */
+
+.gray-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 20px 5px;
+  text-align: center;
+  background: #e6e6e6;
+  display: block;
+}
+
+#contact ul {
+  display: block;
+  width: 60%;
+  margin: auto;
+}
+
+#contact li {
+border-bottom: solid white 1px;
+margin: 5% 0%;
+padding: 2%;
+}
+
+#contact i {
+  width: 10%;
+}
+
+.list-text {
+  margin-left: 5%;
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.skills-span i {
+  height: 60px;
+}
+
+.skills-article {
+  content: " ";
+  display: table;
+  clear: both;
+  width: 80%;
+  margin: auto;
+}
+
+.button-span {
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  font-size: 1.2em;
+  border: solid teal 2px;
+   color: teal;
+   background: #333333;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 3px;
+margin: 5px;
+}
