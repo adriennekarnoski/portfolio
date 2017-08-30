@@ -1,9 +1,14 @@
 'use strict';
+var app = app || {};
 
-function Project (rawDataObj) {
+(function(module) {
+
+function Project(rawDataObj) {
   this.title = rawDataObj.title;
   this.image = rawDataObj.image;
   this.description = rawDataObj.description;
+  this.demoHref = rawDataObj.demoHref;
+  this.codeHref = rawDataObj.codeHref;
 };
 
 Project.all = [];
@@ -37,8 +42,12 @@ Project.fetchAll = function() {
 }
 
 Project.initProjectSection = function() {
-  console.log('working');
   Project.all.forEach(function(project) {
     $('#projects').append(project.toHtml())
   });
 }
+
+Project.fetchAll();
+
+module.Project = Project;
+})(app);

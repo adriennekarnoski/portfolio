@@ -1,3 +1,6 @@
+
+/* defaults */
+
 header {
 display: table;
 content: " ";
@@ -9,8 +12,81 @@ position: fixed;
 top: 0;
 }
 
+nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+}
+
+nav ul {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  left: 0px;
+  top: 80px;
+  background: rgba(0,0,0,0.8);
+  width: 100%;
+  height: 100vh;
+    box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+
+nav li {
+text-align: center;
+font-size: 2em;
+margin: 50px;
+font-family: 'Unica One', cursive;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover, nav li:hover {
+  color: teal;
+}
+
+/* logo */
+
+#logo {
+  height: 80px;
+  line-height: 80px;
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 2.3em;
+  float: left;
+  font-family: 'Unica One', cursive;
+  text-transform: uppercase;
+}
+
 main {
   margin-top: 80px;
+}
+
+h1 {
+  font-family: 'Unica One', cursive;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-family: 'Unica One', cursive;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+p, h3 {
+font-family: 'Abel', sans-serif;
 }
 
 footer {
