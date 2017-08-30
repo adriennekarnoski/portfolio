@@ -13,29 +13,13 @@ var app = app || {};
       method: 'GET',
       headers: {
         Authorization: `token ${githubToken}`
-      },
-      success: function(data) {
-        data.forEach(function(ele) {
-          $.ajax({
-            url: 'https://api.github.com/repos/' + ele.full_name + '/commits',
-            method: 'GET',
-            headers: {
-              Authorization: `token ${githubToken}`
-            }
-          })
-          .then(
-          data => data.forEach(function(com) { repos.commits.push(com)}),
-          err => console.error(err))
-          .then(callback)})
-          }
-          })
+      }
+        })
           .then(
             data => data.forEach(function(ele) {repos.all.push(ele)}),
 
             err => console.error(err))
             .then(callback)
-
-
 };
 
 
@@ -44,20 +28,3 @@ repos.with = attr => repos.all.filter(repo => repo[attr]);
 
   module.repos = repos;
 })(app);
-
-// $.ajax({
-//   url: 'https://api.github.com/repos/301-11-page-js-demo/commits',
-//   method: 'GET',
-//   headers: {
-//     Authorization: `token ${githubToken}`
-//   }
-// })
-
-//
-// $.ajax({
-//   url: 'https://api.github.com/repos/adriennekarnoski/about-me/commits',
-//   method: 'GET',
-//   headers: {
-//     Authorization: `token ${githubToken}`
-//   }
-// })
