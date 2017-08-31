@@ -21,6 +21,7 @@
   "homepage": "https://github.com/adriennekarnoski/portfolio#readme",
   "dependencies": {
     "express": "^4.15.4",
+    "express-request-proxy": "^2.0.0",
     "pg": "^7.2.0"
   }
 }
