@@ -1,2 +1,39 @@
+/* headings */
 
-/* icon font styles*/
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 5px;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.heading {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.content {
+  font-family: 'Playfair Display', serif;
+}
+
+.white {
+  color: white;
+}

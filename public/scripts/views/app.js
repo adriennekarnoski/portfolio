@@ -31,17 +31,18 @@ pageView.handleSubNav = function() {
   $('.sub-nav-li').on('click', function(evn){
       evn.preventDefault();
       let $href = $(this).children().attr('href');
-
+      $(this).find('a').css('color', '#b3ccbd');
+      $(this).siblings().find('a').css('color', 'white');
       $("body, html").animate({
        scrollTop: $( $href ).offset().top
    }, 1000);
-      console.log($href);
+
   });
-
-  let $sections = $('.section-container');
-
-
-  $(window).scroll(function(){
+};
+  // let $sections = $('.section-container');
+  //
+  //
+  // $(window).scroll(function(){
 
 
 
@@ -62,13 +63,13 @@ pageView.handleSubNav = function() {
     //
     //
     //   var id = $currentSection.attr('id');
-        console.log($sections.outerHeight());
+        // console.log($sections.outerHeight());
    // 	 $('a').removeClass('active');
    // 	 $("[href=#"+id+"]").addClass('active');
 
-    })
-
-  };
+  //   }
+  //
+  // };
 
 
 //image carousel

@@ -46,33 +46,6 @@ main {
   /*margin-top: 55px;*/
 }
 
-/* headings */
-
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  text-transform: uppercase;
-}
-
-h2 {
-  display: block;
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-  margin-top: 5px;
-  margin-bottom: 25px;
-}
-
-h3 {
-  font-size: 1.2em;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-p, h3 {
-font-family: 'Playfair Display', serif;
-}
-
 footer {
   display: block;
   width: 100%;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="vendor/styles/normalize.css" >
     <link href="vendor/styles/reset.css" rel="stylesheet" >
     <link href="styles/text.css" rel="stylesheet" >
-    <link href="styles/icons.css" rel="stylesheet" >
+    <link href="styles/base.css" rel="stylesheet" >
     <link href="styles/layout.css" rel="stylesheet" >
     <link href="styles/state.css" rel="stylesheet" >
     <link href="styles/modules.css" rel="stylesheet" >
@@ -54,9 +54,9 @@
           <li id="home" data-content="home" class="nav-li"><a href="/home">Home</a></li>
           <li id="about" data-content="about" class="nav-li"><a href="/about">About</a></li>
             <span id="about-li">
-              <li class="sub-nav-li"><a href="#intro">Intro</a></li>
+              <li class="sub-nav-li"><a href="#intro">Introduction</a></li>
+              <li class="sub-nav-li"><a href="#education">Education</a></li>
               <li class="sub-nav-li"><a href="#contact">Contact</a></li>
-              <li class="sub-nav-li"><a class="jumper" href="#pliip">Pliip</a></li>
             </span>
           <li id="work" data-content="projects" class="nav-li"><a href="/projects">Work</a></li>
             <span id="work-li">
@@ -74,39 +74,69 @@
 
     <main>
       <section class="section-container" id="home-section">
-        <h1 class="name">Adrienne Karnoski</h1>
-        <h2>Create read update deastroy</h2>
+        <h1 class="name">Hello, I'm Adrienne</h1>
+        <h2 class="subheading">Full stack software developer</h2>
       </section>
 
       <section id="about-section">
 
         <article id="intro"  class="section-container">
-          <h2 class="heading">About me</h2>
-          <div id="triangle-up"></div>
-          <div class="gray-container">
-            <p class="gray-container">
-            Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
+          <h2 class="heading">Introduction</h2>
+          <h3 class="subheading">Learn a bit of information about me</h3>
+          <section class="center-container">
+            <div id="triangle-up"></div>
+          <article class="content-container lightgray">
+            <p>Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
             <a href="https://github.com/adriennekarnoski"><i class="fa fa-github fa-3x icon" aria-hidden="true" ></i></a>
             <i class="fa fa-codepen fa-3x icon" aria-hidden="true"></i>
             <i class="fa fa-twitter fa-3x icon" aria-hidden="true"></i>
-          </div>
+          </article>
+          </section>
         </article>
 
+          <article id="education"  class="section-container green">
+            <h2 class="heading">Education</h2>
+            <h3 class="subheading">School and stuff</h3>
+              <section class="edu-container">
+                <h4 class="heading edu-heading">School Name</h4>
+                <ul>
+                  <li class="edu-content subheading">date</li>
+                  <li class="edu-content content"> location</li>
+                  <li class="edu-description content"> description</li>
+                </ul>
+                <h4 class="heading edu-heading">School Name</h4>
+                <ul>
+                  <li class="edu-content subheading">date</li>
+                  <li class="edu-content content"> location</li>
+                  <li class="edu-description content"> description</li>
+                </ul>
+                <h4 class="heading edu-heading">School Name</h4>
+                <ul>
+                  <li class="edu-content subheading">date</li>
+                  <li class="edu-content content"> location</li>
+                  <li class="edu-description content"> description</li>
+                </ul>
+              </section>
+            </article>
 
-    <!-- <section class="section-container" id="contact"> -->
-    <article id="contact"  class="section-container">
-      <img src="/images/macbook.jpg" class="contact-img">
-      <div class="contact-article">
-        <h3 class="subheading">Contact</h3>
-        <ul>
-        <li><i class="fa fa-mobile fa-3x" aria-hidden="true" ></i><span class="list-text"> 123-456-7890</span></li>
-        <li><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><span class="list-text"> email@email.email</span></li>
-        <li> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span class="list-text"> Seattle, WA</span></li>
-        <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><span class="list-text"> Name Name</span></li>
-      </ul>
-    </div>
-  </article>
-</section>
+        <article id="contact"  class="section-container white">
+          <h2 class="heading ">Contact</h2>
+          <h3 class="subheading">Get in touch</h3>
+          <section class="float-container">
+            <article class="float-right white content">
+              <ul>
+                <li><i class="fa fa-mobile fa-3x" aria-hidden="true" ></i> 123-456-7890</li>
+                <li><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i> email@email.email</li>
+                <li> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Seattle, WA</li>
+                <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i> Name Name</li>
+            </ul>
+          </article>
+          <article class="float-left">
+            dsfjhdhjkdshjkds
+          </article>
+        </section>
+      </article>
+    </section>
 
 <section id="work-section">
     <div class="section-container clearfix" id="skills">

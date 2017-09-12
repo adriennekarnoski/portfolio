@@ -33,6 +33,34 @@
   background: #333333;
 }
 
+/*education container*/
+
+.edu-container {
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.edu-heading {
+font-size: 1.2em;
+  width: 53%;
+  margin: auto;
+}
+
+.edu-content {
+  padding-left: 10px;
+    border-left: black solid 2px;
+    width: 50%;
+    margin: auto;
+}
+
+.edu-description {
+  padding: 10px 0px 20px 10px;
+    border-left: black solid 2px;
+    width: 50%;
+    margin: auto;
+}
+
 /* image carousel */
 
 #carousel {
