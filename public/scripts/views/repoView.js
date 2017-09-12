@@ -15,7 +15,6 @@ var app = app || {};
 
     $('#repo-spot').append(
        app.repos.with('name').map(render)
-
     );
   };
 

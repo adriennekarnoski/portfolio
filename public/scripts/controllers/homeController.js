@@ -3,12 +3,12 @@ var app = app || {};
 
 (function(module) {
   const homeController = {};
-
   homeController.init = function() {
-    var $navList = $('.nav-ul');
-    $navList.hide();
-  $('.section-container').hide();
-  $('#intro').show();
+
+      $('#home-section').show().siblings().hide();
+
+
+  $('footer').hide();
   };
 
   module.homeController = homeController;

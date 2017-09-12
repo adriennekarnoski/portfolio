@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="vendor/styles/normalize.css" >
     <link href="vendor/styles/reset.css" rel="stylesheet" >
-    <link href="styles/base.css" rel="stylesheet" >
+    <link href="styles/text.css" rel="stylesheet" >
     <link href="styles/icons.css" rel="stylesheet" >
     <link href="styles/layout.css" rel="stylesheet" >
     <link href="styles/state.css" rel="stylesheet" >
     <link href="styles/modules.css" rel="stylesheet" >
-    <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Playfair+Display" rel="stylesheet">
     <script src="https://use.fontawesome.com/766df9d7f0.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+
+    <!-- templates -->
+
     <script id="project-template" type="text/x-handlebars-template">
         <article class="project-article">
           <h3>{{title}}</h3>
@@ -40,55 +42,76 @@
     </script>
   </head>
 
+<!-- navigation -->
+
   <body>
     <header>
-      <span id="logo">AK</span>
+      <span id="logo"><a href="/home">AK</a></span>
       <div id="nav-list">
       <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
       <nav>
         <ul class="nav-ul">
-          <li data-content="home" class="nav-li"><a href="/home">Home</a></li>
-          <li data-content="about" class="nav-li"><a href="/about">About</a></li>
-          <li data-content="projects" class="nav-li"><a href="/projects">Work</a></li>
+          <li id="home" data-content="home" class="nav-li"><a href="/home">Home</a></li>
+          <li id="about" data-content="about" class="nav-li"><a href="/about">About</a></li>
+            <span id="about-li">
+              <li class="sub-nav-li"><a href="#intro">Intro</a></li>
+              <li class="sub-nav-li"><a href="#contact">Contact</a></li>
+              <li class="sub-nav-li"><a class="jumper" href="#pliip">Pliip</a></li>
+            </span>
+          <li id="work" data-content="projects" class="nav-li"><a href="/projects">Work</a></li>
+            <span id="work-li">
+              <li class="sub-nav-li"><a class="jumper" href="#pliip">Pliip</a></li>
+              <li class="sub-nav-li"><a class="jumper" href="#pliip">Pliip</a></li>
+              <li class="sub-nav-li"><a class="jumper" href="#pliip">Pliip</a></li>
+            </span>
           <li data-content="github" class="nav-li"><a href="https://github.com/adriennekarnoski">GitHub</a></li>
         </ul>
       </nav>
     </div>
     </header>
 
+<!-- main content -->
+
     <main>
-      <section class="section-container" id="intro">
-        <h1 class=name>Adrienne Karnoski</h1>
+      <section class="section-container" id="home-section">
+        <h1 class="name">Adrienne Karnoski</h1>
         <h2>Create read update deastroy</h2>
       </section>
 
-      <section class="section-container" id="about-me">
-        <div id="triangle-up"></div>
-        <div class="gray-container">
-          <h2>About me</h2>
-          <p class="gray-container">
-          Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
-          <a href="https://github.com/adriennekarnoski"><i class="fa fa-github fa-3x" aria-hidden="true" ></i></a>
-          <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
-          <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-      </div>
-    </section>
+      <section id="about-section">
 
-    <section class="section-container" id="contact">
+        <article id="intro"  class="section-container">
+          <h2 class="heading">About me</h2>
+          <div id="triangle-up"></div>
+          <div class="gray-container">
+            <p class="gray-container">
+            Distillery vegan subway tile vape blue bottle +1. Fanny pack semiotics literally hammock. Single-origin coffee tumblr trust fund banh mi unicorn tumeric +1 actually tbh coloring book echo park swag tilde tote bag.</p>
+            <a href="https://github.com/adriennekarnoski"><i class="fa fa-github fa-3x icon" aria-hidden="true" ></i></a>
+            <i class="fa fa-codepen fa-3x icon" aria-hidden="true"></i>
+            <i class="fa fa-twitter fa-3x icon" aria-hidden="true"></i>
+          </div>
+        </article>
+
+
+    <!-- <section class="section-container" id="contact"> -->
+    <article id="contact"  class="section-container">
       <img src="/images/macbook.jpg" class="contact-img">
-      <article class="contact-article">
-        <h2>Contact</h2>
+      <div class="contact-article">
+        <h3 class="subheading">Contact</h3>
         <ul>
         <li><i class="fa fa-mobile fa-3x" aria-hidden="true" ></i><span class="list-text"> 123-456-7890</span></li>
         <li><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><span class="list-text"> email@email.email</span></li>
         <li> <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i><span class="list-text"> Seattle, WA</span></li>
         <li><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i><span class="list-text"> Name Name</span></li>
       </ul>
-      </article>
-    </section>
+    </div>
+  </article>
+</section>
 
-    <section class="section-container clearfix" id="skills">
-      <h2>Skills</h2>
+<section id="work-section">
+    <div class="section-container clearfix" id="skills">
+      <h2 class="heading">Work</h2>
+      <h3 class="subheading">Skills</h3>
     <article class="skills-article">
       <div class="skills-div">
         <i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i>
@@ -119,10 +142,10 @@
       <i class="fa fa-bug fa-3x" aria-hidden="true"></i>
         <p>Debugging</p>
       </div>
-    </article>
-    </section>
+    </div>
+  </article>
 
-<section class="section-container" id="carousel">
+<!-- <section class="section-container" id="carousel">
   <div id="carousel-container">
     <div id="img-container">
       <i class="fa fa-angle-right fa-3x" aria-hidden="true" id="right"></i>
@@ -132,22 +155,22 @@
       <img src="images/valley.jpg" class="carousel-img" id="3">
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="section-container" id="projects">
-  <h2>Projects</h2>
-</section>
-<section class="section-container" id="project-repo">
-  <div id="repo-spot"></div>
+<article class="section-container" id="projects">
+  <h3 class="subheading">Projects</h3>
+</article>
+<!-- <section class="section-container" id="project-repo">
+  <div id="repo-spot"></div> -->
 
 </section>
-
+</span>
     </main>
     <footer>
-      <i class="fa fa-github fa-3x" aria-hidden="true" ></i>
-      <i class="fa fa-codepen fa-3x" aria-hidden="true"></i>
-      <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-      <i class="fa fa-linkedin fa-3x" aria-hidden="true"></i>
+      <i class="fa fa-github" aria-hidden="true" ></i>
+      <i class="fa fa-codepen" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -155,7 +178,6 @@
     <script src="scripts/views/app.js"></script>
     <script src="scripts/models/projects.js"></script>
     <script src="scripts/models/repo.js"></script>
-    <script src="scripts/views/app.js"></script>
     <script src="scripts/views/repoView.js"></script>
     <script src="scripts/controllers/aboutController.js"></script>
     <script src="scripts/controllers/homeController.js"></script>

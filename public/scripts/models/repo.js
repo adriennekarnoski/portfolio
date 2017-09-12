@@ -17,5 +17,3 @@ repos.with = attr => repos.all.filter(repo => repo[attr]);
 
   module.repos = repos;
 })(app);
-
-// data.forEach(function(ele) {repos.all.push(ele)}

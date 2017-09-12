@@ -1,5 +1,16 @@
 
 /*  reusable modular components of a design */
+.icon {
+  color: black;
+}
+
+.heading {
+  font-size: 3em;
+}
+
+.subheading {
+  font-size: 2em;
+}
 
 .gray-container {
   width: 80%;
@@ -58,5 +69,5 @@ padding: 2%;
    text-align: center;
    text-decoration: none;
    border-radius: 3px;
-margin: 5px;
+   margin: 5px;
 }

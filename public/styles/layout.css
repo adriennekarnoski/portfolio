@@ -4,13 +4,14 @@
 .section-container {
   display: block;
   margin: auto;
-  padding: 25px 0;
+  height: 100vh;
+  padding-top: 80px;
 }
 
 /* about me */
 
 .about a:hover {
-  color: teal;
+  color: #b1cbbb;
 }
 
 .about a {
