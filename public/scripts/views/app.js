@@ -9,6 +9,7 @@ var app = app || {};
 
   pageView.handleNav = function() {
     if($(window).width() <= 640){
+      console.log('window size is less than 640px')
       $('#nav-list').on('click', 'i.fa-bars', function() {
         let $navList = $('.nav-ul');
         $navList.slideToggle();
@@ -16,15 +17,13 @@ var app = app || {};
       }
     if($(window).width() > 640){
       let $hideOther = $('.sub-nav-li').hide();
-        $('#nav-list').on('click', '.nav-li', function() {
-      let $color = $(this).css('color', '');
-      let $hideOther = $('.sub-nav-li').hide('slow');
-      let $listEl = $(this).attr('id');
-
+      $('#nav-list').on('click', '.nav-li', function() {
+        let $color = $(this).css('color', '');
+        let $hideOther = $('.sub-nav-li').hide('slow');
+        let $listEl = $(this).attr('id');
         $('#' + $listEl + '-li').children().show('slow');
-        })
-
-      }
+      })
+    }
 };
 
 pageView.handleSubNav = function() {
@@ -36,7 +35,6 @@ pageView.handleSubNav = function() {
       $("body, html").animate({
        scrollTop: $( $href ).offset().top
    }, 1000);
-
   });
 };
   // let $sections = $('.section-container');

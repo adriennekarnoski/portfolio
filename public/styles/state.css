@@ -3,7 +3,6 @@ nav {
   display: block;
   position: relative;
   width: 100%;
-  z-index: 99;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
 }
@@ -11,9 +10,8 @@ nav {
 .nav-ul {
   display: none;
   position: absolute;
-  z-index: 99;
   left: 0px;
-  top: 80px;
+  top: 60px;
   background: rgba(0,0,0,0.8);
   width: 100%;
   height: 100vh;
@@ -24,7 +22,6 @@ nav {
   text-align: center;
   font-size: 1em;
   margin: 50px;
-
 }
 
 .sub-nav-li {
@@ -41,7 +38,16 @@ nav {
   font-size: 2em;
   text-align: center;
   width: 100%;
+
 }
+
+#home-section {
+  background-image: url('/images/mountain-background.jpg');
+  background-position: bottom;
+  height: 100vh;
+}
+
+
 
 .contact-article {
   width: 100%;
@@ -76,6 +82,9 @@ nav {
   display: block;
 }
 
+
+
+
 @media screen and (min-width: 640px) {
 
   nav {
@@ -95,16 +104,12 @@ nav {
     box-shadow: none;
   }
 
-/*#about-li, #work-li {
-
-}*/
   .nav-li {
     display: inline;
     height: 60px;
     line-height: 60px;
     font-size: 1em;
     margin: 0px 10px;
-
   }
 
 .sub-nav-li {
@@ -124,6 +129,7 @@ nav {
 #home-span {
   display: none;
 }
+
 #work-span {
   display: none;
 }
@@ -141,7 +147,7 @@ nav {
   .name {
     width: 100%;
     font-size: 4em;
-    padding-top: 10%;
+    padding-top: 15%;
   }
 
   .contact-article {

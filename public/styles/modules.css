@@ -4,8 +4,16 @@
 /*containers*/
 
 .content-container {
-  width: 70%;
+  width: 90%;
   height: 100%;
+  margin: auto;
+  padding: 20px 5px;
+  text-align: center;
+  display: block;
+}
+
+.center-container {
+  width: 70%;
   margin: auto;
   padding: 20px 5px;
   text-align: center;
@@ -38,7 +46,7 @@
 }
 
 .lightgray {
-  background: #e6e6e6;
+  background: #e0e2e4;
 }
 
 .darkgray {

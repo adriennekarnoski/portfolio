@@ -4,10 +4,10 @@ var app = app || {};
 (function(module) {
   const aboutController = {};
   aboutController.init = function() {
+    $('#about-section').show().siblings().hide();
+    // $('nav ul').hide();
 
-      $('#about-section').show().siblings().hide();
-
-app.pageView.handleSubNav();
+    app.pageView.handleSubNav();
   };
 
   module.aboutController = aboutController;
